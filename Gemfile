@@ -3,8 +3,7 @@ source 'https://rubygems.org'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.0.0'
 
-# Use sqlite3 as the database for Active Record
-gem 'sqlite3'
+gem 'pg'
 
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 4.0.0'
@@ -27,10 +26,16 @@ gem 'turbolinks'
 # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
 gem 'jbuilder', '~> 1.2'
 
+gem 'whitman', :git => 'https://github.com/mrlarner/lorem-whitman.git'
+
 group :development, :test do
   gem 'rspec-rails', '~> 3.0.0.beta'
   gem 'factory_girl_rails'
   gem 'database_cleaner'
+end
+
+group :test do
+  gem 'shoulda-matchers'
 end
 
 group :doc do
