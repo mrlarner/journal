@@ -2,6 +2,7 @@
 
 FactoryGirl.define do
   factory :entry do
-    content "MyText"
+    content { Whitman::Sentence.sentences(2).join('.') }
+    sequence(:created_at) { |n| Time.now + n.days }
   end
 end
