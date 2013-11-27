@@ -30,7 +30,7 @@ gem 'jbuilder', '~> 1.2'
 gem 'whitman', :git => 'https://github.com/mrlarner/lorem-whitman.git'
 
 group :development, :test do
-  gem 'rspec-rails', '~> 3.0.0.beta'
+  gem 'rspec-rails'
   gem 'factory_girl_rails'
   gem 'database_cleaner'
 end
